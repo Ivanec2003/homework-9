@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".calendarEvents.CalendarEventsActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldEnterData"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/outlinedTextFieldEnterData">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldEnterTime"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/outlinedTextFieldEnterTime">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldEnterDescriptionEvent"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/outlinedTextFieldEnterDescriptionEvent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCreateEvent"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonCreateEvent"/>
+
+</LinearLayout>
